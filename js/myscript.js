@@ -1,24 +1,24 @@
 $(document).ready(function() {
   // al passaggio del mouse rimuove la classe hide,
-  $('.dropdown').mouseenter(function() {
-    $('.dropdown .menu-dp').addClass('hide_dp');
-    $(this).children('.dropdown .menu-dp').removeClass('hide_dp');
-    $('.up').removeClass('hide_dp')
 
 
-
-
-  });
-
-// al click del mouse la funzione rimuove(o aggiunge) la classe hide
-  $('.dropdown').click(function() {
-    $(this).children('.menu-dp').toggleClass('hide_dp');
-
+// al click del mouse sul body o main il menu dropdown si nasconde, al click ricompare
+  $('.dropdown, body').on('click', function() {
+    $('.menu-dp').addClass('hide_dp');
    });
 
 
-})
+// questa funzione cambia l icona della sezione language (icona che va su e giu)
+   $('.dropdown-lang').mouseleave(function() {
+     $('.upIcon').addClass('hide_dpo');
+     $('.downIcon').removeClass('hide_dpo');
+   });
 
-// TODO: aggiungere al click nel main la rimozione del menu dropdown
-// TODO: aggiungere after nuovo ad alcuni elementi dell li
-// TODO: far cambiare il verso dell icona after IT
+// quando il mouse entra sui menu dropdown, vengono giu uno alla volta.
+   $('.dropdown, .dropdown-lang').on('mouseenter', function() {
+     $('.dropdown .menu-dp').addClass('hide_dp');
+     $(this).children('.dropdown .menu-dp').removeClass('hide_dp');
+     $(this).children('.dropdown-lang .downIcon').addClass('hide_dpo');
+     $(this).children('.upIcon').removeClass('hide_dpo');
+   });
+});

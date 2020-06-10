@@ -42,6 +42,10 @@ header {
   display: none;
 }
 
+.hide_dpo {
+  display: none;
+}
+
 ul.list-inline>li {
   padding: 0 12px;
 }
@@ -71,22 +75,11 @@ ul.menu-dp {
   border-radius: 3px;
   padding: 10px 35px;
   left: 50%;
-  top: 35px;
+  top: 25px;
   transform: translateX(-50%);
 }
 
 ul.menu-dp>li {
   padding: 10px;
 }
-
-
-
-/* TODO: guarda i todo nel file js */
-
-
-/* .language-icon0::after {
-  content: '^';
-  position: absolute;
-  transform: rotate(0deg);
-} */
 /* ends header */
