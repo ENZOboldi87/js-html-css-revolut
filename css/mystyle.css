@@ -16,9 +16,7 @@ a:hover {
 
 ul {
   list-style: none;
-
 }
-
 /* ends reset */
 
 /* header */
@@ -28,7 +26,8 @@ header {
 
 .logo-left {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  line-height: 50px;
 }
 
 .logo-left>a {
@@ -39,7 +38,7 @@ header {
   width: 100px;
 }
 
-.fornow {
+.hide_dp {
   display: none;
 }
 
@@ -63,17 +62,24 @@ ul.list-inline>li>a>button:hover {
 ul.menu-dp>li.dropdown {
   position: relative;
 }
+
 ul.menu-dp {
   background: white;
   position: absolute;
-  top: 50px;
   text-align: left;
   box-shadow: 10px 11px 31px -12px rgba(0,0,0,0.75);
   border-radius: 3px;
-  padding: 20px;
+  padding: 10px 35px;
+  left: 50%;
+  top: 35px;
+  transform: translateX(-50%);
 }
 
 ul.menu-dp>li {
   padding: 10px;
+}
+
+li a .language-icon::after {
+  content: 'prova';
 }
 /* ends header */
