@@ -79,7 +79,18 @@ ul.menu-dp>li {
   padding: 10px;
 }
 
-li a .language-icon::after {
-  content: 'prova';
+.language-icon::after {
+  content: '^';
+  position: absolute;
+  transform: rotate(180deg);
 }
+
+/* TODO: guarda i todo nel file js */
+
+
+/* .language-icon0::after {
+  content: '^';
+  position: absolute;
+  transform: rotate(0deg);
+} */
 /* ends header */
