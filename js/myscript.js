@@ -3,6 +3,8 @@ $(document).ready(function() {
   $('.dropdown').mouseenter(function() {
     $('.dropdown .menu-dp').addClass('hide_dp');
     $(this).children('.dropdown .menu-dp').removeClass('hide_dp');
+    $('.up').removeClass('hide_dp')
+
 
 
 
@@ -11,9 +13,12 @@ $(document).ready(function() {
 // al click del mouse la funzione rimuove(o aggiunge) la classe hide
   $('.dropdown').click(function() {
     $(this).children('.menu-dp').toggleClass('hide_dp');
+
    });
+
 
 })
 
-// TODO: aggiungere after nuovo ad alcuni elementi dell li 
+// TODO: aggiungere al click nel main la rimozione del menu dropdown
+// TODO: aggiungere after nuovo ad alcuni elementi dell li
 // TODO: far cambiare il verso dell icona after IT

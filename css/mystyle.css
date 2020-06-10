@@ -79,11 +79,7 @@ ul.menu-dp>li {
   padding: 10px;
 }
 
-.language-icon::after {
-  content: '^';
-  position: absolute;
-  transform: rotate(180deg);
-}
+
 
 /* TODO: guarda i todo nel file js */
 
