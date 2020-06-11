@@ -7,6 +7,7 @@
 
 a {
   color: grey;
+  white-space: nowrap;
 }
 
 a:hover {
@@ -17,6 +18,15 @@ a:hover {
 ul {
   list-style: none;
 }
+
+span {
+  position: relative;
+  font-size: 10px;
+  font-weight: 600;
+  color: #eb288d;
+  top: -10px;
+}
+
 /* ends reset */
 
 /* header */
@@ -73,7 +83,6 @@ ul.menu-dp {
   text-align: left;
   box-shadow: 10px 11px 31px -12px rgba(0,0,0,0.75);
   border-radius: 3px;
-  padding: 10px 35px;
   left: 50%;
   top: 25px;
   transform: translateX(-50%);
@@ -81,5 +90,10 @@ ul.menu-dp {
 
 ul.menu-dp>li {
   padding: 10px;
+}
+
+ul.menu-dp>li>a {
+  padding: 10px;
+  display: block;
 }
 /* ends header */
